@@ -1,30 +1,34 @@
-import os
+import os, json
 from datetime import datetime
 
 def slugify(text):
     return text.lower().replace(' ', '-').replace('(', '').replace(')', '')
 
-def generate_review(name, asin, image_url, category, tag='youraffiliatetag'):
-    slug = slugify(name)
+with open('_data/products.json') as f:
+    products = json.load(f)
+
+os.makedirs('_review_pool', exist_ok=True)
+
+for prod in products:
+    slug = slugify(prod['name'])
     fname = f"{slug}.md"
     date = datetime.now().strftime('%Y-%m-%d')
     content = f"""---
 layout: post
-title: "{name} Review"
+title: "{prod['name']} Review"
 date: {date}
-categories: {category}
-image: {image_url}
-description: Auto-generated review of {name}.
+categories: {prod['category']}
+image: {prod['image']}
+description: Auto-generated review of {prod['name']}.
 ---
 
-![{name}]({image_url})
+![{prod['name']}]({prod['image']})
 
-The **{name}** offers...
+The **{prod['name']}** is a top smart home device.
+
 ### Buy Now
 [Check Price](/go/{slug})
-
 """
-    os.makedirs('_review_pool', exist_ok=True)
     with open(os.path.join('_review_pool', fname), 'w') as f:
         f.write(content)
     print(f"Generated: {fname}")

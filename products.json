@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Echo Auto",
+    "asin": "B07SCHYHC6",
+    "image": "https://m.media-amazon.com/images/I/71J4bDjN1xL._AC_SL1500_.jpg",
+    "category": "smart-speakers"
+  },
+  {
+    "name": "Blink Mini",
+    "asin": "B07X76VQMK",
+    "image": "https://m.media-amazon.com/images/I/71ZQ+vBI4fL._AC_SL1500_.jpg",
+    "category": "smart-cameras"
+  }
+]
