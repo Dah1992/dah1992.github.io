@@ -1,6 +1,10 @@
 title: Smart Home Reviews
+email: your-email@example.com
+description: >-
+  Automated smart home gadget reviews and recommendations.
+baseurl: ""
+url: "https://dah1992.github.io"
+theme: minima
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
-collections:
-  posts:
-    output: true
