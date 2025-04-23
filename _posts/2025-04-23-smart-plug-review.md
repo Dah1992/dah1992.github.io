@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Top Smart Plug for 2025"
-image: /assets/images/smart-plug.jpg
+image: image: https://upload.wikimedia.org/wikipedia/commons/0/00/TP-Link_HS110_smartplug.jpg
 affiliate_link: https://www.amazon.com/dp/B089DR29T6?tag=yourtag-20
 ---
 
