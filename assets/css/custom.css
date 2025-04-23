@@ -1,4 +1,6 @@
 body {
+  border: 10px solid hotpink;
+}body {
   background: url("/assets/images/tech-bg.jpg") no-repeat center center fixed;
   background-size: cover;
 }
