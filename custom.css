@@ -1,0 +1,51 @@
+/* assets/css/custom.css */
+/* Full-page tech background */
+body {
+  background: url("/assets/images/tech-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Text and link styles on dark background */
+.site-title, .site-content, .site-footer {
+  color: #fff;
+}
+a, h1, h2, h3, h4 {
+  color: #a8dfff;
+}
+
+/* Products page grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+.product-grid li {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.product-grid img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.btn {
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .5rem 1rem;
+  background: #0077cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
