@@ -1,0 +1,1 @@
+// Search functionality script placeholder
