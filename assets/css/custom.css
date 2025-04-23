@@ -2,6 +2,7 @@ body {
   background: url("/assets/images/tech-bg.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+
 body::before {
   content: "";
   position: fixed;
@@ -10,9 +11,11 @@ body::before {
   pointer-events: none;
   z-index: -1;
 }
+
 .site-title, .site-content, .site-footer {
   color: #fff;
 }
+
 a, h1, h2, h3, h4 {
   color: #a8dfff;
 }
