@@ -1,23 +1,57 @@
+/* Background Image with Fallback */
 body {
-  border: 10px solid hotpink;
-}body {
   background: url("/assets/images/tech-bg.jpg") no-repeat center center fixed;
   background-size: cover;
+  background-color: #000; /* fallback if image fails */
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
 }
 
+/* Dim Overlay */
 body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  pointer-events: none;
+  background: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
 
-.site-title, .site-content, .site-footer {
-  color: #fff;
+/* Headings and Links */
+h1, h2, h3, h4, h5 {
+  color: #00c3ff;
+  text-shadow: 1px 1px 2px #000;
 }
 
-a, h1, h2, h3, h4 {
-  color: #a8dfff;
+a {
+  color: #58d3ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.site-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.site-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #aaa;
 }
